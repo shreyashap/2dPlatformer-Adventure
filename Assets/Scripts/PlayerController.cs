@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private int _lives;
     private bool isDied;
+   
 
     //private Score score;
 
@@ -77,7 +78,8 @@ public class PlayerController : MonoBehaviour
 
 
         float horizontalInput = Input.GetAxisRaw("Horizontal");
-        anim.SetFloat("speed", Mathf.Abs(horizontalInput));
+         anim.SetFloat("speed", Mathf.Abs(horizontalInput));
+        
 
 
         float moveX = (horizontalInput * _speed * Time.deltaTime);
