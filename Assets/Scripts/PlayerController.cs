@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     private bool isDied;
    
 
-    //private Score score;
+    [SerializeField]private Score score;
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
             Debug.LogError("Rigidbody missing");
         }
 
-        //score = GameObject.Find("Canvas").GetComponent<Score>();
+       
 
         m_scalex = 0.8645924f;
         m_scaley = 1.320639f;
@@ -148,16 +148,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-   /* public void Damage()
+    public void Damage()
     {
         _lives--;
         if (_lives < 1)
         {
             Debug.Log("Player Died");
             isDied = true;
-            UIManager._instance.GameOver();
+            //UIManager._instance.GameOver();
         }
         score.UpdateLivesUi(_lives);
-    }*/
+    }
 
 }
