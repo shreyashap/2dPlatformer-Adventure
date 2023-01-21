@@ -236,6 +236,7 @@ MonoBehaviour:
   anim: {fileID: 2755203341695582298}
   jumpForce: 5
   _lives: 3
+  score: {fileID: 0}
 --- !u!95 &2755203341695582298
 Animator:
   serializedVersion: 4

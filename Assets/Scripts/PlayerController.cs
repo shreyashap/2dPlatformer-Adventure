@@ -58,7 +58,9 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y < _fallLimit)
         {
             Debug.Log("Player Died");
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+ 
+           
         }
         else
         {
@@ -155,7 +157,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Player Died");
             isDied = true;
-            //UIManager._instance.GameOver();
+            UIManager._instance.GameOver();
         }
         score.UpdateLivesUi(_lives);
     }
