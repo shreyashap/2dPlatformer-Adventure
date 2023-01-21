@@ -609,7 +609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LEVEL1
+  m_text: 'LEVEL3
 
 '
   m_isRightToLeft: 0
@@ -1933,7 +1933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098f421310171e349b31927eaf756935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToUnlock: 2
+  levelToUnlock: 4
 --- !u!61 &1611340263
 BoxCollider2D:
   m_ObjectHideFlags: 0
