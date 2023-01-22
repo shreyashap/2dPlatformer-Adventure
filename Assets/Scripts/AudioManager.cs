@@ -6,16 +6,20 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip collectibleAudio;
-
-    // Start is called before the first frame update
-    void Start()
+    public AudioClip levelClickSound;
+    public AudioClip backButtonSound;
+   
+    public void PlayStartSound()
     {
-        
+        audioSource.Play();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LevelClickSound()
     {
-        
+        audioSource.PlayOneShot(levelClickSound);
+    }
+    public void BackButtonClick()
+    {
+        audioSource.PlayOneShot(backButtonSound);
     }
 }
